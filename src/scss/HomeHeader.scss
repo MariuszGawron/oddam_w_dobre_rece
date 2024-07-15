@@ -1,0 +1,35 @@
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.home-nav-list,
+.home-nav-auth {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.home-nav-list li,
+.home-nav-auth li {
+  margin: 0 15px;
+}
+
+.home-nav-auth .btn {
+  border: 1px solid #ffb3b3;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.home-nav-auth .btn:hover {
+  background-color: #ffb3b3;
+  color: white;
+}

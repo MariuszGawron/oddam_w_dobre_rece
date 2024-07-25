@@ -1,0 +1,63 @@
+@import "settings/fonts";
+@import "settings/colors";
+
+.home-aboutus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+}
+
+.home-aboutus-img {
+  background: url("../assets/images/People.jpg") no-repeat left;
+  background-size: cover;
+  width: 50vw;
+  height: 100%;
+  position: absolute;
+  margin-left: 50vw;
+}
+
+.home-aboutus-nav {
+  width: 50vw;
+  height: 935px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f1f1;
+}
+
+.aboutus-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  width: 700px;
+}
+
+.aboutus-desc h1 {
+  font: 38px/55px $font-base;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -0.76px;
+}
+
+.aboutus-desc p {
+  font: 30px/54px $font-base;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -0.76px;
+}
+
+.main-decoration {
+  background: url("../assets/icons/Decoration.svg") 50% no-repeat;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.aboutus-signature {
+  background: url("../assets/icons/Signature.svg") no-repeat right;
+  width: 209px;
+  height: 149px;
+}

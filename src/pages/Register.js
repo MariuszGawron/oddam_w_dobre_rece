@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { auth } from "../firebase";
+// import { auth } from "../firebase";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -8,7 +8,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await auth.createUserWithEmailAndPassword(email, password);
+      // await auth.createUserWithEmailAndPassword(email, password);
     } catch (error) {
       console.error("Error registering with email and password", error);
     }

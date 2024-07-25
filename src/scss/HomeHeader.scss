@@ -3,30 +3,34 @@
 
 .home-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
 }
 
 .home-img {
-  background: url("../assets/images/Home-Hero-Image.jpg");
-  width: 100%;
-  height: 963px;
-  left: -483px;
+  background: url("../assets/images/Home-Hero-Image.jpg") no-repeat right;
+  background-size: cover;
+  width: 50vw;
+  height: 100%;
+  position: absolute;
 }
 
 .home-header-nav {
+  margin-left: 50vw;
+  width: 50vw;
+  height: 1000px;
   display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
   flex-direction: column;
-  width: 873px;
+  justify-content: flex-start;
+  gap: 100px;
 }
 
 .home-nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-between;
-  width: 100%;
+  margin-right: 120px;
 }
 
 .home-nav-list,
@@ -36,33 +40,30 @@
   padding: 0;
 }
 
-.home-nav-list li,
-.home-nav-auth li {
-  margin: 0 15px;
-}
-
-.home-nav-auth .btn {
-  border: 1px solid #ffb3b3;
-  padding: 5px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font: 14px/85px $font-base;
-}
-
-.home-nav-auth .btn:hover {
-  background-color: #ffb3b3;
-  color: white;
-}
-
 .home-nav-list .btn {
-  border: 1px solid #ffb3b3;
-  padding: 5px 15px;
-  border-radius: 5px;
+  border: 0.75px solid $background-color;
   text-decoration: none;
+  color: $text-color-secondary;
   font: 18px/24px $font-base;
+  padding: 9px 20px;
+  display: block;
 }
 
 .home-nav-list .btn:hover {
-  background-color: #ffb3b3;
-  color: white;
+  border: 0.75px solid $text-color-secondary;
+  cursor: pointer;
+}
+
+.home-nav-auth .btn {
+  border: 0.75px solid $background-color;
+  text-decoration: none;
+  color: #737373;
+  font: 13px/20px $font-base;
+  padding: 9px 10px;
+  display: block;
+}
+
+.home-nav-auth .btn:hover {
+  border: 0.75px solid #fad648;
+  cursor: pointer;
 }

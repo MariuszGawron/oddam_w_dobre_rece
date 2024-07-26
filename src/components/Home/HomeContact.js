@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../scss/HomeContact.scss";
 
 const HomeContact = () => {
@@ -21,11 +20,11 @@ const HomeContact = () => {
             </div>
           </div>
           <div className="form-data message">
-            <label className="email-label">Wpisz swoją wiadomość</label>
-            <input
-              className="email-input"
+            <label className="message-label">Wpisz swoją wiadomość</label>
+            <textarea
+              className="message-input"
               placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            ></input>
+            ></textarea>
           </div>
         </form>
       </div>

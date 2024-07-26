@@ -47,8 +47,21 @@
   width: 528px;
 }
 
-.contact-form-data input {
+.contact-form-data label {
+  font: 600 16px/20px $font-base;
+  color: $text-color-secondary;
+}
+
+.contact-form-data input,
+textarea {
   border-style: hidden;
+  font: 18px/24px $font-base;
+  color: $text-color-secondary;
+  resize: none;
+}
+.contact-form-data input::placeholder,
+textarea::placeholder {
+  color: #3c3c3c26;
 }
 
 .form-datas {
@@ -59,4 +72,22 @@
 .form-data {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 0.75px solid #a1a1a1;
+  margin: 40px 0 0 0;
+}
+
+.name,
+.email {
+  width: 256px;
+  height: 62px;
+}
+
+.message {
+  width: 528px;
+  height: 135px;
+}
+
+.message-input {
+  height: 97px;
 }

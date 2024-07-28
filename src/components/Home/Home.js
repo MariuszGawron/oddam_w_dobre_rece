@@ -11,7 +11,7 @@ const Home = () => {
     <div className="home-main">
       <HomeHeader />
       <HomeThreeColumns />
-      <HomeSteps id="main-four-steps" />
+      <HomeSteps />
       <HomeAboutUs />
       <HomeWhoHelp />
       <HomeContact />

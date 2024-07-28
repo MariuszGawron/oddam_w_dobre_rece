@@ -1,0 +1,90 @@
+@import "settings/fonts";
+@import "settings/colors";
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.login-container {
+  width: 400px;
+  text-align: center;
+}
+
+.login h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  letter-spacing: -0.76px;
+}
+
+.main-decoration {
+  background: url("../assets/icons/Decoration.svg") center no-repeat;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 385px;
+  height: 320px;
+  background-color: #f0f1f1;
+}
+
+.login-form-inputs p {
+  margin: 0;
+}
+
+.login-input {
+  width: 250px;
+  margin-bottom: 20px;
+  border-bottom: 0.75px solid #a1a1a1;
+}
+
+.login-input label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font: 600 16px/24px $font-base;
+  color: $text-color-secondary;
+}
+
+.login-input input {
+  width: 100%;
+  border-style: hidden;
+  font: 600 16px/24px $font-base;
+  color: $text-color-secondary;
+  background-color: #f0f1f1;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130%;
+  margin-top: 20px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background-color: $background-color;
+  color: $text-color-secondary;
+  font: 18px/32px $font-base;
+  border: 0.75px solid $background-color;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  border: 0.75px solid $text-color-secondary;
+}

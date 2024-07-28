@@ -38,6 +38,7 @@
 
 .whohelp-nav-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
@@ -70,7 +71,7 @@
   font: 22px/30px $font-base;
   margin-bottom: 20px;
   text-align: center;
-  width: 640px;
+  max-width: 640px;
 }
 
 .whohelp-item-title {
@@ -105,6 +106,7 @@
 }
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
 }

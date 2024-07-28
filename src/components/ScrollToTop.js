@@ -25,7 +25,7 @@ const ScrollToTop = () => {
   return (
     <div className="scroll-to-top">
       {isVisible && (
-        <ScrollLink to="home-header" smooth={true} duration={1500} className="scroll-to-top-button">
+        <ScrollLink to="home-header" smooth={true} duration={500} className="scroll-to-top-button">
           <span className="scroll-to-top-span">&#8735;</span>
         </ScrollLink>
       )}

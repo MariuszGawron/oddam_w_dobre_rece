@@ -13,7 +13,7 @@ const Home = () => {
     <div className="home-main">
       <HomeHeader />
       <HomeThreeColumns />
-      <HomeSteps />
+      <HomeSteps id="main-four-steps" />
       <HomeAboutUs />
       <HomeWhoHelp />
       <HomeContact />

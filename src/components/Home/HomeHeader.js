@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "../../scss/HomeHeader.scss";
-import HomeThreeColumns from "./HomeThreeColumns";
 import HomeMainButtons from "./HomeMainButtons";
+import ScrollToTop from "../ScrollToTop";
 
 const HomeHeader = () => {
+  useEffect(() => {
+    const targetSection = localStorage.getItem("targetSection");
+    if (targetSection) {
+      const element = document.getElementById(targetSection);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      localStorage.removeItem("targetSection");
+    }
+  }, []);
   return (
-    <header className="home-header">
+    <header id="home-header" className="home-header">
       <div className="home-img"></div>
       <div className="home-header-nav">
         <nav className="home-nav">
@@ -24,35 +35,36 @@ const HomeHeader = () => {
           </ul>
           <ul className="home-nav-list">
             <li>
-              <Link to="/start" className="btn">
+              <ScrollLink to="main-buttons" smooth={true} duration={500} className="btn">
                 Start
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link to="/about" className="btn">
+              <ScrollLink to="main-four-steps" smooth={true} duration={500} className="btn">
                 O co chodzi?
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link to="/us" className="btn">
+              <ScrollLink to="home-aboutus" smooth={true} duration={500} className="btn">
                 O nas
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link to="/organizations" className="btn">
+              <ScrollLink to="home-whohelp" smooth={true} duration={500} className="btn">
                 Fundacja i organizacje
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link to="/contact" className="btn">
+              <ScrollLink to="home-contact" smooth={true} duration={500} className="btn">
                 Kontakt
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
         </nav>
-        <HomeThreeColumns />
         <HomeMainButtons />
       </div>
+
+      <ScrollToTop />
     </header>
   );
 };

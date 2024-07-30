@@ -1,29 +1,58 @@
-.home-main-buttons {
+@import "settings/fonts";
+@import "settings/colors";
+
+.main-buttons {
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0 0 0;
 }
 
-.home-main-buttons h1 {
-  font-size: 2.5em;
+.main-buttons h1 {
+  font: 38px/55px $font-base;
   margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -0.76px;
+}
+
+.main-decoration {
+  background: url("../assets/icons/Decoration.svg") 50% no-repeat;
+  height: 40px;
+  margin-bottom: 40px;
 }
 
 .buttons-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 
-.main-button {
-  padding: 15px 30px;
-  border: 2px solid #ffb3b3;
+.buttons-container-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.buttons-container-links li {
+  box-sizing: border-box;
+  border: 0.75px solid $text-color-secondary;
+  height: 120px;
+  min-width: 15vw;
+  margin: 0 20px;
+}
+
+.buttons-container-links li:hover {
+  border: 2px solid $text-color-secondary;
+}
+
+.container-links-button {
+  display: block;
+  box-sizing: border-box;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.main-button:hover {
-  background-color: #ffb3b3;
-  color: white;
+  color: $text-color-secondary;
+  font: 36px/45px $font-base;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 13px 0;
 }

@@ -4,19 +4,26 @@ import "../../scss/HomeMainButtons.scss";
 
 const HomeMainButtons = () => {
   return (
-    <section className="home-main-buttons">
+    <section id="main-buttons" className="main-buttons">
       <h1>
         Zacznij pomagać!
         <br />
         Oddaj niechciane rzeczy w zaufane ręce
       </h1>
+      <div className="main-decoration"></div>
       <div className="buttons-container">
-        <Link to="/login" className="main-button">
-          Oddaj rzeczy
-        </Link>
-        <Link to="/login" className="main-button">
-          Zorganizuj zbiórkę
-        </Link>
+        <ul className="buttons-container-links">
+          <li>
+            <Link to="/login" className="container-links-button">
+              ODDAJ<br></br>RZECZY
+            </Link>
+          </li>
+          <li>
+            <Link to="/login" className="container-links-button">
+              ZORGANIZUJ<br></br>ZBIÓRKĘ
+            </Link>
+          </li>
+        </ul>
       </div>
     </section>
   );

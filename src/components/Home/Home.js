@@ -1,12 +1,20 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
-import "../../scss/Home.scss";
+import HomeThreeColumns from "./HomeThreeColumns";
+import HomeSteps from "./HomeSteps";
+import HomeAboutUs from "./HomeAboutUs";
+import HomeWhoHelp from "./HomeWhoHelp";
+import HomeContact from "./HomeContact";
 
 const Home = () => {
   return (
     <div className="home-main">
       <HomeHeader />
-      {/* Dodaj inne komponenty sekcji/grup w razie potrzeby */}
+      <HomeThreeColumns />
+      <HomeSteps />
+      <HomeAboutUs />
+      <HomeWhoHelp />
+      <HomeContact />
     </div>
   );
 };

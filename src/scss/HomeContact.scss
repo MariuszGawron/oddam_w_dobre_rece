@@ -1,0 +1,143 @@
+@import "settings/fonts";
+@import "settings/colors";
+
+.home-contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  position: relative;
+}
+
+.home-contact-img {
+  background: url("../assets/images/Background-Contact-Form.jpg") no-repeat left;
+  opacity: 25%;
+  background-size: cover;
+  width: 55vw;
+  height: 100%;
+  position: absolute;
+}
+
+.home-contact-form {
+  margin-left: 50vw;
+  margin-top: 40px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home-contact-form h1 {
+  font: 38px/55px $font-base;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -0.76px;
+}
+
+.main-decoration {
+  background: url("../assets/icons/Decoration.svg") 50% no-repeat;
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-form-data {
+  display: flex;
+  flex-direction: column;
+  width: 528px;
+}
+
+.contact-form-data label {
+  font: 600 16px/20px $font-base;
+  color: $text-color-secondary;
+}
+
+.contact-form-data input,
+textarea {
+  border-style: hidden;
+  font: 18px/24px $font-base;
+  color: $text-color-secondary;
+  resize: none;
+}
+
+.contact-form-data input::placeholder,
+textarea::placeholder {
+  color: #3c3c3c26;
+}
+
+.form-datas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 0.75px solid #a1a1a1;
+  margin: 40px 0 0 0;
+}
+
+.name,
+.email {
+  width: 256px;
+  height: 62px;
+}
+
+.message {
+  width: 528px;
+  height: 135px;
+}
+
+.message-input {
+  height: 97px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.form-data-btn {
+  background-color: $background-color;
+  color: $text-color-secondary;
+  font: 18px/32px $font-base;
+  width: 150px;
+  height: 50px;
+  border: 0.75px solid $text-color-secondary;
+  margin: 40px 0 0 calc(100% - 150px);
+  cursor: pointer;
+}
+
+.home-contact-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 80px auto 80px;
+}
+.contact-footer-copyright {
+  font: 18px/24px $font-base;
+  color: $text-color-secondary;
+}
+.contact-footer-socialmedia {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-socialmedia-facebook {
+  background: url("../assets/icons/Facebook.svg") 50% no-repeat;
+  width: 30px;
+  height: 30px;
+}
+.footer-socialmedia-insta {
+  background: url("../assets/icons/Instagram.svg") 50% no-repeat;
+  width: 30px;
+  height: 30px;
+}
